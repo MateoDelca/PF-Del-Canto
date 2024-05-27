@@ -269,46 +269,34 @@ DISCOS --------------------------------------------------------
 Informacion --------------------------------------------------------
 .infosobreduki{
     text-align: center;
-    padding: 30px;
+    margin: 10px;
+    padding: 10px;
 }
 .dukiinfo1{
-    text-align: left;
-    width: 50rem;
-    padding: 100px;
-    display: inline-block
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 .fotoinfoduki1{
     width: 200px;
-    position: relative;
-    left: 50px;
-    margin: 5px;
-    top: 100px;
-}
+}  
 .dukiinfo2{
-    text-align: left;
-    width: 50rem;
-    padding: 100px;
-    display: inline-block
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 .fotoinfoduki2{
     width: 200px;
-    position: relative;
-    left: 50px;
-    margin: 5px;
-    top: 100px;
+
 }
 .dukiinfo3{
-    text-align: left;
-    width: 50rem;
-    padding: 100px;
-    display: inline-block
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 .fotoinfoduki3{
     width: 200px;
-    position: relative;
-    left: 50px;
-    margin: 5px;
-    top: 100px;
+
 }
 .dukiinfo4{
     text-align: center;
@@ -323,6 +311,7 @@ Informacion --------------------------------------------------------
     background-image: url(../Fotos/DukiFondo1.jpg);
     color: white;
     padding: 10px;
+    text-align: center;
 }
 
 
@@ -340,17 +329,17 @@ MERCH --------------------------------------------------------
 .fotoMerch1{
     width: 250px;
     position: relative;
-    left: 350px;
+    right: 20px;
 }
 .merch2{
     width: 250px;
     position: relative;
-    left: 450px;
+
 }
 .merch3{
     width: 250px;
     position: relative;
-    left: 525px;
+    left: 20px; 
 }
 .h3merch{
     text-align: center;
@@ -370,6 +359,7 @@ MERCH --------------------------------------------------------
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5px;
+    text-align: center;
 }
 
 
