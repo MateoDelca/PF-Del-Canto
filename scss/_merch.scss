@@ -1,0 +1,41 @@
+.mainMerch{
+    background-image: url(../Fotos/DukiFondo2.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    text-align: center;
+    .titulomerch{
+        text-align: center;
+        padding: 30px;
+    }
+    .h2merch{
+        text-align: center;
+    }
+    .h3merch{
+        text-align: center;
+        padding: 20px;
+    }
+    .fotoMerch1{
+        width: 250px;
+        position: relative;
+        right: 20px;
+    }
+    .merch2{
+        width: 250px;
+        position: relative;
+    }
+    .h3merch2{
+        text-align: center;
+        padding: 20px;
+    }
+    .merch3{
+        width: 250px;
+        position: relative;
+        left: 20px; 
+    }
+}
+.footerMERCH{
+    text-align: center;
+    background-color: gray;
+}

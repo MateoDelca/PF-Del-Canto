@@ -1,0 +1,143 @@
+.mainDiscos{
+    background-image: url(../Fotos/DukiFondo3.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    grid-area: mainDiscos;
+    .indicaciones{
+        text-align: center;
+        padding: 30px;
+    }
+    .navDiscos {
+
+        padding: 10px;
+        list-style: none;
+        margin: 20px auto;
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "portadaSSJ portadaEP24 portadaDEFDM"
+        "portadaTDR portadaTDR2 portadaADA";
+    }
+    @media screen and (max-width:768px){
+        .navDiscos {
+            width: 100vw;
+            height: 100vh;
+            padding: 10px;
+            list-style: none;
+            margin: 20px auto;
+            text-decoration: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "portadaSSJ portadaEP24"
+            "portadaDEFDM portadaTDR"
+            "portadaTDR2 portadaADA";
+        }
+    }
+    
+    @media screen and (max-width:420px){
+        .navDiscos {
+            width: 100vw;
+            height: 100vh;
+            padding: 10px;
+            list-style: none;
+            margin: 20px auto;
+            text-decoration: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas: 
+            "portadaSSJ"
+            "portadaEP24"
+            "portadaDEFDM"
+            "portadaTDR"
+            "portadaTDR2"
+            "portadaADA";
+        }
+    }
+    .navDiscos li{
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        .linkSSJ{
+            position: relative;
+        }
+        .portadaSSJ{
+            width: 200px;
+            grid-area: portadaSSJ;
+        }
+        .SSJ{
+            text-decoration: none;
+            color: white;
+        }
+        .linkEP24{
+            position: relative;
+        }
+        .portadaEP24{
+            width: 200px;
+            grid-area: portadaEP24;
+        }
+        .EP24{
+            text-decoration: none;
+            color: white;
+        }
+        .linkDEFDM{
+            position: relative;
+        }
+        .portadaDEFDM{
+            width: 200px;
+            grid-area: portadaDEFDM;
+        }
+        .DEFDM{
+            text-decoration: none;
+            color: white;
+        }
+        .linkTDR{
+            position: relative;
+        }
+        .portadaTDR{
+            width: 200px;
+            grid-area: portadaTDR;
+        }
+        .TDR{
+            text-decoration: none;
+            color: white;
+        }
+        .linkTDR2{
+            position: relative;
+        }
+        .portadaTDR2{
+            width: 200px;
+            grid-area: portadaTDR2;
+        }
+        .TDR2{
+            text-decoration: none;
+            color: white;
+        }
+        .linkADA{
+            position: relative;
+        }
+        .portadaADA{
+            text-decoration: none;
+            color: black;
+            width: 200px;
+            grid-area: portadaADA;
+        }
+        .ADA{
+            text-decoration: none;
+            color: white;
+        }
+            
+    }  
+}
+.footerDISCOS{
+    text-align: center;
+    background-color: gray;
+    grid-area: footerDISCOS;
+}

@@ -1,380 +1,351 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-@font-face{
-    font-family: "DMSerifDisplay-Regular";
-    src: url(../Font/DMSerifDisplay-Regular.ttf);
-}
-.body{
-    font-family: "DMSerifDisplay-Regular";
-}
-.footer{
-    font-family: "DMSerifDisplay-Regular";
-}
-.backgris{
-    background-color: gray;
-    text-align: right;
-    padding: 10px;
-}
-.LogoHeader{
-    width: 75px;
-    padding: 5px;
+.backgris {
+  background-color: gray;
+  text-align: right;
+  padding: 10px;
 }
 
+.backfooter {
+  text-align: center;
+  padding: 10px;
+}
 
-INDEX -------------------------------------------------------- 
-.ParrafoIndex{
-    text-align: center;
-    padding: 20px;
+.gris {
+  background-color: gray;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.RedireccionDISCO{
-    width: 200px;
-    border-radius: 30%;
+
+@font-face {
+  font-family: "DMSerifDisplay-Regular";
+  src: url(../Font/DMSerifDisplay-Regular.ttf);
 }
-.RedireccionDISCO:hover{
-    border-radius: 0%;
+.body {
+  font-family: "DMSerifDisplay-Regular";
 }
-.RedireccionINFO{
-    width: 200px;
-    border-radius: 30%; 
+
+.LogoHeader {
+  width: 75px;
+  padding: 5px;
 }
-.RedireccionINFO:hover{
-    border-radius: 0%;
+
+.mainIndex {
+  background-image: url(../Fotos/DukiFondoIndex.jpg);
+  color: white;
+  padding: 5px;
+  background-size: cover;
+  grid-area: mainIndex;
 }
-.RedireccionMERCH{
-    width: 200px;
-    border-radius: 30%;
+.mainIndex .ParrafoIndex {
+  text-align: center;
+  padding: 20px;
 }
-.RedireccionMERCH:hover{
-    border-radius: 0%;
+
+.navIndex {
+  padding: 10px;
+  list-style: none;
+  margin: 10px auto;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "RedireccionDISCOS RedireccionINFO RedireccionMERCH RedireccionFORM";
 }
-.RedireccionFORM{
-    width: 200px;
-    border-radius: 30%;
+.navIndex .RedireccionDISCO {
+  width: 200px;
+  border-radius: 30%;
 }
-.RedireccionFORM:hover{
-    border-radius: 0%;
+.navIndex .RedireccionDISCO:hover {
+  border-radius: 0%;
 }
-.footerINDEX{
-    text-align: center;
-    background-color: grey;
-    padding: 20px;
-    grid-area: footerINDEX;
+.navIndex .RedireccionINFO {
+  width: 200px;
+  border-radius: 30%;
 }
-.mainIndex{
-    background-image: url(../Fotos/DukiFondoIndex.jpg);
-    color: white;
-    padding: 5px;
-    background-size: cover;
-    grid-area: mainIndex;
+.navIndex .RedireccionINFO:hover {
+  border-radius: 0%;
 }
-.navIndex{
+.navIndex .RedireccionMERCH {
+  width: 200px;
+  border-radius: 30%;
+}
+.navIndex .RedireccionMERCH:hover {
+  border-radius: 0%;
+}
+.navIndex .RedireccionFORM {
+  width: 200px;
+  border-radius: 30%;
+}
+.navIndex .RedireccionFORM:hover {
+  border-radius: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  .navIndex {
+    width: 100vw;
+    height: 100vh;
     padding: 10px;
     list-style: none;
     margin: 10px auto;
     text-decoration: none;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "RedireccionDISCOS RedireccionINFO RedireccionMERCH RedireccionFORM";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "RedireccionDISCOS RedireccionINFO" "RedireccionMERCH RedireccionFORM";
+  }
 }
-@media screen and (max-width:768px){
-    .navIndex {
-        width: 100vw;
-        height: 100vh;
-        padding: 10px;
-        list-style: none;
-        margin: 10px auto;
-        text-decoration: none;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "RedireccionDISCOS RedireccionINFO"
-        "RedireccionMERCH RedireccionFORM";
-    }
-}
-@media screen and (max-width:420px){
-    .navIndex {
-        width: 100vw;
-        height: 100vh;
-        padding: 10px;
-        list-style: none;
-        margin: 10px auto;
-        text-decoration: none;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "RedireccionDISCOS"
-        "RedireccionINFO"
-        "RedireccionMERCH"
-        "RedireccionFORM";
-    }
-}
-
-
-DISCOS -------------------------------------------------------- 
-
-.indicaciones{
-    text-align: center;
-    padding: 30px;
-}
-.mainDiscos{
-    background-image: url(../Fotos/DukiFondo3.jpg);
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media screen and (max-width: 420px) {
+  .navIndex {
+    width: 100vw;
+    height: 100vh;
     padding: 10px;
-    grid-area: mainDiscos;
+    list-style: none;
+    margin: 10px auto;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "RedireccionDISCOS" "RedireccionINFO" "RedireccionMERCH" "RedireccionFORM";
+  }
 }
-.navDiscos {
+.footerINDEX {
+  text-align: center;
+  background-color: grey;
+  padding: 20px;
+  grid-area: footerINDEX;
+}
 
+.mainDiscos {
+  background-image: url(../Fotos/DukiFondo3.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  grid-area: mainDiscos;
+}
+.mainDiscos .indicaciones {
+  text-align: center;
+  padding: 30px;
+}
+.mainDiscos .navDiscos {
+  padding: 10px;
+  list-style: none;
+  margin: 20px auto;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "portadaSSJ portadaEP24 portadaDEFDM" "portadaTDR portadaTDR2 portadaADA";
+}
+@media screen and (max-width: 768px) {
+  .mainDiscos .navDiscos {
+    width: 100vw;
+    height: 100vh;
     padding: 10px;
     list-style: none;
     margin: 20px auto;
     text-decoration: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "portadaSSJ portadaEP24 portadaDEFDM"
-    "portadaTDR portadaTDR2 portadaADA";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "portadaSSJ portadaEP24" "portadaDEFDM portadaTDR" "portadaTDR2 portadaADA";
+  }
 }
-@media screen and (max-width:768px){
-    .navDiscos {
-        width: 100vw;
-        height: 100vh;
-        padding: 10px;
-        list-style: none;
-        margin: 20px auto;
-        text-decoration: none;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "portadaSSJ portadaEP24"
-        "portadaDEFDM portadaTDR"
-        "portadaTDR2 portadaADA";
-    }
-}
-
-@media screen and (max-width:420px){
-    .navDiscos {
-        width: 100vw;
-        height: 100vh;
-        padding: 10px;
-        list-style: none;
-        margin: 20px auto;
-        text-decoration: none;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-        "portadaSSJ"
-        "portadaEP24"
-        "portadaDEFDM"
-        "portadaTDR"
-        "portadaTDR2"
-        "portadaADA";
-    }
-}
-
-.navDiscos li{
-    display: inline-block;
-    text-align: center;
+@media screen and (max-width: 420px) {
+  .mainDiscos .navDiscos {
+    width: 100vw;
+    height: 100vh;
     padding: 10px;
-    margin: 10px;
-}
-.linkSSJ{
-    position: relative;
-}
-.linkEP24{
-    position: relative;
-}
-.linkDEFDM{
-    position: relative;
-}
-.linkTDR{
-    position: relative;
-}
-.linkTDR2{
-    position: relative;
-}
-.linkADA{
-    position: relative;
-}
-.portadaSSJ{
-    width: 200px;
-    grid-area: portadaSSJ;
-}
-.portadaEP24{
-    width: 200px;
-    grid-area: portadaEP24;
-}
-.portadaDEFDM{
-    width: 200px;
-    grid-area: portadaDEFDM;
-}
-.portadaTDR{
-    width: 200px;
-    grid-area: portadaTDR;
-}
-.portadaTDR2{
-    width: 200px;
-    grid-area: portadaTDR2;
-}
-.portadaADA{
+    list-style: none;
+    margin: 20px auto;
     text-decoration: none;
-    color: black;
-    width: 200px;
-    grid-area: portadaADA;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "portadaSSJ" "portadaEP24" "portadaDEFDM" "portadaTDR" "portadaTDR2" "portadaADA";
+  }
 }
-.SSJ{
-    text-decoration: none;
-    color: white;
+.mainDiscos .navDiscos li {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
 }
-.EP24{
-    text-decoration: none;
-    color: white;
+.mainDiscos .navDiscos li .linkSSJ {
+  position: relative;
 }
-.DEFDM{
-    text-decoration: none;
-    color: white;
+.mainDiscos .navDiscos li .portadaSSJ {
+  width: 200px;
+  grid-area: portadaSSJ;
 }
-.TDR{
-    text-decoration: none;
-    color: white;
+.mainDiscos .navDiscos li .SSJ {
+  text-decoration: none;
+  color: white;
 }
-.TDR2{
-    text-decoration: none;
-    color: white;
+.mainDiscos .navDiscos li .linkEP24 {
+  position: relative;
 }
-.ADA{
-    text-decoration: none;
-    color: white;
+.mainDiscos .navDiscos li .portadaEP24 {
+  width: 200px;
+  grid-area: portadaEP24;
 }
-.footerDISCOS{
-    text-align: center;
-    background-color: gray;
-    grid-area: footerDISCOS;
+.mainDiscos .navDiscos li .EP24 {
+  text-decoration: none;
+  color: white;
 }
-
-
-
-Informacion --------------------------------------------------------
-.infosobreduki{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+.mainDiscos .navDiscos li .linkDEFDM {
+  position: relative;
 }
-.dukiinfo1{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+.mainDiscos .navDiscos li .portadaDEFDM {
+  width: 200px;
+  grid-area: portadaDEFDM;
 }
-.fotoinfoduki1{
-    width: 200px;
-}  
-.dukiinfo2{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+.mainDiscos .navDiscos li .DEFDM {
+  text-decoration: none;
+  color: white;
 }
-.fotoinfoduki2{
-    width: 200px;
-
+.mainDiscos .navDiscos li .linkTDR {
+  position: relative;
 }
-.dukiinfo3{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+.mainDiscos .navDiscos li .portadaTDR {
+  width: 200px;
+  grid-area: portadaTDR;
 }
-.fotoinfoduki3{
-    width: 200px;
-
+.mainDiscos .navDiscos li .TDR {
+  text-decoration: none;
+  color: white;
 }
-.dukiinfo4{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+.mainDiscos .navDiscos li .linkTDR2 {
+  position: relative;
 }
-.footerINFO{
-    text-align: center;
-    background-color: gray;
+.mainDiscos .navDiscos li .portadaTDR2 {
+  width: 200px;
+  grid-area: portadaTDR2;
 }
-.mainInfo{
-    background-image: url(../Fotos/DukiFondo1.jpg);
-    color: white;
-    padding: 10px;
-    text-align: center;
+.mainDiscos .navDiscos li .TDR2 {
+  text-decoration: none;
+  color: white;
+}
+.mainDiscos .navDiscos li .linkADA {
+  position: relative;
+}
+.mainDiscos .navDiscos li .portadaADA {
+  text-decoration: none;
+  color: black;
+  width: 200px;
+  grid-area: portadaADA;
+}
+.mainDiscos .navDiscos li .ADA {
+  text-decoration: none;
+  color: white;
 }
 
-
-
-
-
-MERCH --------------------------------------------------------
-.titulomerch{
-    text-align: center;
-    padding: 30px;
-}
-.h2merch{
-    text-align: center;
-}
-.fotoMerch1{
-    width: 250px;
-    position: relative;
-    right: 20px;
-}
-.merch2{
-    width: 250px;
-    position: relative;
-
-}
-.merch3{
-    width: 250px;
-    position: relative;
-    left: 20px; 
-}
-.h3merch{
-    text-align: center;
-    padding: 20px;
-}
-.h3merch2{
-    text-align: center;
-    padding: 20px;
-}
-.footerMERCH{
-    text-align: center;
-    background-color: gray;
-}
-.mainMerch{
-    background-image: url(../Fotos/DukiFondo2.jpg);
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5px;
-    text-align: center;
+.footerDISCOS {
+  text-align: center;
+  background-color: gray;
+  grid-area: footerDISCOS;
 }
 
-
-FORMS --------------------------------------------------------
-
-.FORMfooter{
-    text-align: center;
-    background-color: gray
+.mainInfo {
+  background-image: url(../Fotos/DukiFondo1.jpg);
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
-.mainForm{
-    background-image: url(../Fotos/FondoDuki.jpg);
-    color: white;
-    text-align: center;
-    padding: 45px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5px;
+.mainInfo .infosobreduki {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
+.mainInfo .dukiinfo1 {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.mainInfo .fotoinfoduki1 {
+  width: 200px;
+}
+.mainInfo .dukiinfo2 {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.mainInfo .fotoinfoduki2 {
+  width: 200px;
+}
+.mainInfo .dukiinfo3 {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.mainInfo .fotoinfoduki3 {
+  width: 200px;
+}
+.mainInfo .dukiinfo4 {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.footerINFO {
+  text-align: center;
+  background-color: gray;
+}
+
+.mainMerch {
+  background-image: url(../Fotos/DukiFondo2.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  text-align: center;
+}
+.mainMerch .titulomerch {
+  text-align: center;
+  padding: 30px;
+}
+.mainMerch .h2merch {
+  text-align: center;
+}
+.mainMerch .h3merch {
+  text-align: center;
+  padding: 20px;
+}
+.mainMerch .fotoMerch1 {
+  width: 250px;
+  position: relative;
+  right: 20px;
+}
+.mainMerch .merch2 {
+  width: 250px;
+  position: relative;
+}
+.mainMerch .h3merch2 {
+  text-align: center;
+  padding: 20px;
+}
+.mainMerch .merch3 {
+  width: 250px;
+  position: relative;
+  left: 20px;
+}
+
+.footerMERCH {
+  text-align: center;
+  background-color: gray;
+}
+
+.mainForm {
+  background-image: url(../Fotos/FondoDuki.jpg);
+  color: white;
+  text-align: center;
+  padding: 45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=Estilo.css.map */

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "DMSerifDisplay-Regular";
+    src: url(../Font/DMSerifDisplay-Regular.ttf);
+}
+.body{
+    font-family: "DMSerifDisplay-Regular";
+}
+
+.LogoHeader{
+    width: 75px;
+    padding: 5px;
+}
