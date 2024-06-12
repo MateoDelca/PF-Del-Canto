@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,27 +40,23 @@
     </header>
     <main class="mainForm">
         <form action="">
-            <div>
+            <div class="p-5">
                 <label for="name">Nombre:</label>
                 <input type="text" name="name" placeholder="Nombre aqui">
             </div>
-            <br>
             <div>
                 <label for="surname">Apellido:</label>
                 <input type="text" name="surname" placeholder="Apellido aqui">
             </div>
-            <br>
-            <div>
+            <div class="p-5">
                 <label for="mail">*Escribe tu E-Mail:</label>
                 <input type="email" name="mail" placeholder="E-Mail aqui" required>
             </div>
-            <br>
             <div>
                 <label for="pass">*Contraseña:</label>
                 <input type="password" name="pass" required>
             </div>
-            <br>
-            <div>
+            <div class="p-5">
                 <label for="pais">Selecciona tu pais de residencia:</label>
                 <select name="pais" id="">
                     <option value="arg">Argentina</option>
@@ -68,16 +64,13 @@
                     <option value="uy">Uruguay</option>
                 </select>
             </div>
-            <br>
             <div>
                 <label for="com">Escribe tus comentarios</label>
-                <br>
+                <div class="p-2"></div>
                 <textarea name="com" id="" cols="30" rows="10"></textarea>
             </div>
-            <br>
-            <label for="condiciones">Acepto las condiciones</label>
+            <label for="condiciones p-5">Acepto las condiciones</label>
             <input type="checkbox" name="condiciones">
-            <br>
             <input type="submit" value="Enviar datos">
             <input type="reset" value="Borrar campos">
 
